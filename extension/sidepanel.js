@@ -80,7 +80,7 @@ function renderMessages(messages, job) {
   const log = $("log");
   const stick = log.scrollHeight - log.scrollTop < log.clientHeight + 48;
   log.innerHTML = "";
-  addMsg("sys", "Same thread as Harness chat “hermes-chrome-panel”. Every question and answer shows here and there.");
+  addMsg("sys", "Same thread as Harness chat. Every question and answer shows here and there.");
   for (const m of list) {
     addMsg(m.role === "user" ? "me" : "bot", m.text);
   }
@@ -318,7 +318,7 @@ document.addEventListener("drop", (e) => {
   takeFiles(e.dataTransfer && e.dataTransfer.files);
 });
 
-addMsg("sys", "Same thread as Harness chat “hermes-chrome-panel”. Alt+H opens this panel. Drop image or PDF here.");
+addMsg("sys", "Same thread as Harness chat. Alt+H opens this panel. Drop image or PDF here.");
 pair().then(async () => {
   ping();
   tick();
