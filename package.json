@@ -1,0 +1,32 @@
+{
+  "name": "@local/dsh-chrome",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Harness Chrome — control the user's real Google Chrome via CDP — navigate, snapshot, click, fill, screenshot.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "relay.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "extension/manifest.json",
+    "extension/background.js",
+    "extension/sidepanel.html",
+    "extension/sidepanel.js",
+    "extension/offscreen.html",
+    "extension/offscreen.js",
+    "extension/icons/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Harness Chrome",
+    "description": "Control the user's real Google Chrome via CDP — navigate, snapshot, click, fill, screenshot.",
+    "detail": "docs/DETAIL.md"
+  }
+}
